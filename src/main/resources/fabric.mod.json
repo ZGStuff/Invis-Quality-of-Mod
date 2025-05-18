@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "invis-qom",
+	"version": "${version}",
+	"name": "Invis' Quality of Mod",
+	"description": "Adds some tool and armor sets that should be in vanilla (in my opinion)",
+	"authors": [
+		"Invis"
+	],
+	"contact": {
+		"homepage": "https://github.com/ZGStuff",
+		"sources": "https://github.com/ZGStuff/QualityOfMod"
+	},
+	"license": "MIT",
+	"icon": "assets/invis-qom/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"git.invisreal.qualityofmod.InvisQualityOfMod"
+		],
+		"fabric-datagen": [
+			"git.invisreal.qualityofmod.InvisQualityOfModDataGenerator"
+		],
+		"client": [
+			"git.invisreal.qualityofmod.InvisQualityOfModClient"
+		]
+	},
+	"mixins": [
+		"invis-qom.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
