@@ -1,5 +1,7 @@
 package git.invisreal.qualityofmod;
 
+import git.invisreal.qualityofmod.block.ModBlocks;
+import git.invisreal.qualityofmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,7 +20,8 @@ public class InvisQualityOfMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 		LOGGER.info("This is a quality of mod right here. It's better than nintendo!!");
 	}
 }

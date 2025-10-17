@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "invis-qom:block/cosmicalite_block"
+  }
+}
