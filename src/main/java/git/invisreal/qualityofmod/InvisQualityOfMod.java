@@ -2,6 +2,7 @@ package git.invisreal.qualityofmod;
 
 import git.invisreal.qualityofmod.block.ModBlocks;
 import git.invisreal.qualityofmod.item.ModItems;
+import git.invisreal.qualityofmod.item.ModTools;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -21,7 +22,8 @@ public class InvisQualityOfMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModItems.registerModItems();
+//		ModTools.registerModTools();
 		ModBlocks.registerModBlocks();
-		LOGGER.info("This is a quality of mod right here. It's better than nintendo!!");
+		LOGGER.info("this is surely a very quality of mod");
 	}
 }
